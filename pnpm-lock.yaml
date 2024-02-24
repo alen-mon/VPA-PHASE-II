@@ -101,6 +101,9 @@ dependencies:
   remark-math:
     specifier: ^5.1.1
     version: 5.1.1
+  speak-tts:
+    specifier: ^2.0.8
+    version: 2.0.8
 
 devDependencies:
   '@tailwindcss/typography':
@@ -4776,6 +4779,10 @@ packages:
 
   /space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
+    dev: false
+
+  /speak-tts@2.0.8:
+    resolution: {integrity: sha512-VY6Q6mRjdou6bF+x0LspvM7GJhBxHx8CLyGPTNQQ7jrztiGutyI4QNZn0cA17c4uk0FnFbA4PaMI3skeZ6PiFg==}
     dev: false
 
   /sswr@2.0.0(svelte@4.2.9):

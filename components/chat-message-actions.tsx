@@ -11,10 +11,24 @@ interface ChatMessageActionsProps extends React.ComponentProps<'div'> {
   message: Message
 }
 const speechSynthesis = window.speechSynthesis
+let speak: any
+
+if (typeof window !== 'undefined' && !window.speechSynthesis) {
+  try {
+    speak = require('speak-tts')
+  } catch (error) {
+    console.error('Failed to import speak-tts:', error)
+  }
+}
+
 export function textToSpeech(message: string | undefined) {
   if (typeof window !== 'undefined' && window.speechSynthesis) {
     const utterance = new SpeechSynthesisUtterance(message)
     window.speechSynthesis.speak(utterance)
+  } else if (speak) {
+    speak.default.speak({
+      text: message
+    })
   } else {
     console.error('Speech synthesis is not available in this environment.')
   }
