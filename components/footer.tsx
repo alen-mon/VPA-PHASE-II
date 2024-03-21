@@ -13,9 +13,11 @@ export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
       )}
       {...props}
     >
-      Open source VPA built with{' '}
-      <ExternalLink href="https://nextjs.org">Next.js</ExternalLink> and{' '}
-      <ExternalLink href="https://platform.openai.com">Open AI</ExternalLink>.
+      VPA SuperCharged with{' '}
+      <ExternalLink href="https://platform.openai.com">
+        Open AI assistants
+      </ExternalLink>
+      .
     </p>
   )
 }

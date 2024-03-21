@@ -6,8 +6,16 @@ import { IconArrowRight } from '@/components/ui/icons'
 
 const exampleMessages = [
   {
-    heading: 'Tell me a Joke',
-    message: `Tell me a funny joke`
+    heading: 'Get me the weather of [city]',
+    message: `Get me the weather of Coimbatore`
+  },
+  {
+    heading: 'login to my email id [email] password is [password]',
+    message: `login to my email id  password is \n`
+  },
+  {
+    heading: 'Send a mail to [email] with the body [message]',
+    message: `Send a mail to with the body `
   },
   {
     heading: 'Prepare me a schedule ',
@@ -16,6 +24,19 @@ const exampleMessages = [
   {
     heading: 'Motivate me ',
     message: `Motivate me by telling me a motivational quote for the day \n`
+  },
+  {
+    heading:
+      'Development Test - Send Mail to alenmon2002@gmail.com with the body "Hello" ',
+    message: `send mail to alenmon2002@gmail.com with the body Hello \n`
+  },
+  {
+    heading: 'Development Test-Login to spotify',
+    message: `login spotify\n`
+  },
+  {
+    heading: 'Development Test-Authenticate Email',
+    message: `login to my email id alenmon2002@gmail.com password is klgcdbxrdfpksuxd\n`
   }
 ]
 
@@ -24,10 +45,10 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
     <div className="mx-auto max-w-2xl px-4">
       <div className="rounded-lg border bg-background p-8">
         <h1 className="mb-2 text-lg font-semibold">
-          Welcome to Your Personal Assistant
+          👋 Hiya User , I'm VPA and Iam here to help you
         </h1>
         <p className="mb-2 leading-normal text-muted-foreground">
-          This is an open source VPA (Virtual Private Assistant) app Built with{' '}
+          Your Personal Assistant here Built with{' '}
           <ExternalLink href="https://nextjs.org">Next.js</ExternalLink> and
           powered by{' '}
           <ExternalLink href="https://openai.com/research">

@@ -44,7 +44,9 @@
     "react-textarea-autosize": "^8.5.3",
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1",
-    "speak-tts": "^2.0.8"
+    "request": "^2.88.2",
+    "speak-tts": "^2.0.8",
+    "vercel": "^33.5.5"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
@@ -52,6 +54,7 @@
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@types/react-syntax-highlighter": "^15.5.11",
+    "@types/request": "^2.48.12",
     "@typescript-eslint/parser": "^6.19.0",
     "autoprefixer": "^10.4.17",
     "eslint": "^8.56.0",
